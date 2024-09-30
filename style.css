@@ -1,0 +1,84 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFD942;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+  }
+
+  @font-face {
+    font-family: 'Mont';
+    src: url(Montserrat-Medium.ttf);
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .traffic-light {
+    width: 60px;
+    height: 160px;
+    background-color:#333;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 50px; /* Distância da contagem regressiva */
+  }
+  
+  .light {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #555;
+    margin: 5px auto;
+    transition: background-color 0.3s ease;
+  }
+  
+  .red.active { background-color: red; }
+  .yellow.active { background-color: yellow; }
+  .green.active { background-color: green; }
+  
+  /* Estilo da contagem regressiva */
+  .countdown {
+    text-align: center;
+    z-index: 1;
+    color:#333;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Mont';
+  }
+  
+  .timer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .time-segment {
+    margin: 0 15px;
+    text-align: center;
+  }
+  
+  .time-segment span {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .time-segment p {
+    font-size: 1rem;
+    font-family: 'Mont';
+  }
+  
